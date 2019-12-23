@@ -1,12 +1,12 @@
 import React from 'react';
-import Con from '../../hoc/Con';
+import Merge from '../../hoc/Merge';
 import classes from './Layout.css';
 const layout=(props)=>(
-    <Con>
+    <Merge>
     <div>Toolbar,SideDrawer,Backdrop</div>
     <main className={classes.Content}>
         {props.children}
     </main>
-    </Con>
+    </Merge>
 );
 export default layout;
